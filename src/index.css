@@ -1,15 +1,84 @@
-@import-normalize; /* bring in normalize.css styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'Roboto', 
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
+}
+
+body .MuiTypography-root,
+body .MuiLink-root {
+  text-decoration: none;
+}
+
+body .MuiTypography-root-MuiLink-root {
+  text-decoration: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ul, ol .MuiLink-root{
+  text-decoration: none;
+}
+a .MuiLink-root{
+  text-decoration: none;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+.carouselImg{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  /* width: 100px;
+  height: 250px; */
+  border-radius: 10px;
+} 
+
+.ContentModal__landscape {
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.ContentModal__portrait {
+  display: none;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+@media (max-width: 835px) {
+  .ContentModal__landscape {
+    display: none;
+  }
+
+  .ContentModal__portrait {
+    display: flex;
+    /* width: 38%; */
+  }}
+
+  .YouTubePlayer{
+    width: 640px;
+    height: 390px;
+    align-self: center;
+    margin-top: 10px;
+  }

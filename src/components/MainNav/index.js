@@ -1,0 +1,1 @@
+export { SimpleBottomNavigation } from "./MainNav.jsx";
