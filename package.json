@@ -2,6 +2,7 @@
   "name": "moviesite",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://yivgha.github.io/moviesite/",
   "dependencies": {
     "@emotion/primitives": "^11.10.0",
     "@emotion/react": "^11.10.5",
